@@ -3,8 +3,8 @@ import React, { useContext, useEffect } from "react";
 import { ipTracker_SearchQuery } from "../../actions/ipTracker";
 import { IpTrackerContext } from "../../App/App";
 import { handleSetLatitudeAndLongitude } from "../../helpers/handleSetLatitudeLongitude";
-import { LoadingMap } from "../LoadingMap/LoadingMap";
-import { LoadingMapError } from "../LoadingMap/LoadingMapError";
+import { LoadingMap } from "./LoadingMap/LoadingMap";
+import { LoadingMapError } from "./LoadingMap/LoadingMapError";
 export const GeoMap = () => {
   const {
     dispatch,
