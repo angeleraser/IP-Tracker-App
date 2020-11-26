@@ -9,6 +9,9 @@
 
 /* Components */
 
+/* Loading Circle */
+@import "./components/LoadingCircle/LoadingCircle.css";
+
 /* Search Header */
 @import "./components/SearchHeader/SearchHeader.css";
 @import "./components/SearchHeader/SearchForm/SearchForm.css";

@@ -13,7 +13,7 @@
 
 .search-form input {
   padding: 20px 30px;
-  font-size: var(--fs-sl);
+  font-size: var(--fs-ss);
   font-family: var(--ff-montserrat);
   font-weight: var(--fw-medium);
   color: var(--very-dark-gray);
@@ -21,14 +21,35 @@
   border-radius: 12px 0 0 12px;
 }
 
-.search-form button {
+.search-form .btn-submit {
   background-color: var(--black);
   padding: 0 22px;
   flex-shrink: 0;
   border-radius: 0 12px 12px 0;
   transition: all 0.3s;
+  min-width: 58px;
 }
 
-.search-form button:hover {
-  opacity: 0.8;
+.search-form .btn-submit:disabled {
+  cursor: not-allowed;
+  background-color: var(--very-dark-gray);
+}
+
+.search-form .btn-submit .sk-circle {
+  width: 14px;
+  height: 14px;
+}
+
+.search-form .btn-submit .sk-circle .sk-child:before {
+  background-color: var(--white);
+}
+
+.search-form .btn-submit:hover {
+  background-color: var(--very-dark-gray);
+}
+
+@media screen and (min-width: 768px) {
+  .search-form input {
+    font-size: var(--sl);
+  }
 }

@@ -30,6 +30,7 @@ export const ipTrackerReducer = (
     case ipTrackerTypes.SetFetchError:
       return {
         ...state,
+        data: {},
         error: payload,
       };
     default:

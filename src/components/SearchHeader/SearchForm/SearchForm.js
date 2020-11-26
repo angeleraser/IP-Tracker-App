@@ -3,9 +3,13 @@ import { iconArrow } from "../../../assets/svg/svg";
 import { useForm } from "../../../hooks/useForm";
 import { IpTrackerContext } from "../../../App/App";
 import { ipTracker_SearchQuery } from "../../../actions/ipTracker";
+import { LoadingCircle } from "../../../LoadingCircle/LoadingCircle";
 const initState = { query: "" };
 const SearchForm = () => {
-  const { dispatch } = useContext(IpTrackerContext);
+  const {
+    dispatch,
+    ipTrackerState: { loading },
+  } = useContext(IpTrackerContext);
   const [{ query }, handleInputChange, resetForm] = useForm(initState);
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -23,7 +27,9 @@ const SearchForm = () => {
           type="text"
         />
       </label>
-      <button>{iconArrow}</button>
+      <button disabled={loading} className="btn-submit">
+        {loading ? <LoadingCircle /> : iconArrow}
+      </button>
     </form>
   );
 };
