@@ -1,0 +1,26 @@
+:root {
+  /* Colours */
+  --very-dark-gray: hsl(0, 0%, 17%);
+  --black: #000000;
+  --dark-gray: hsl(0, 0%, 59%);
+  --dark-purple: #4849a6;
+  --white: #ffffff;
+
+  /* Font Family */
+  --ff-montserrat: "Montserrat", Helvetica, sans-serif;
+
+  /* Font Sizes */
+  --fs-ss: 12px;
+  --fs-s: 16px;
+  --fs-sl: 18px;
+  --fs-l: 24px;
+  --fs-m: 28px;
+
+  /* Font weights  */
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-bold: 700;
+
+  /* Box Shadow */
+  --box-shadow: 0 10px 40px -10px rgba(0, 64, 128, 0.2);
+}

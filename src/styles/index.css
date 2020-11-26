@@ -1,0 +1,18 @@
+/* Reset and base styles */
+@import "./base/reset.css";
+
+/* Settings and variables */
+@import "./settings/settings.css";
+
+/* Fonts */
+@import "./fonts/fonts.css";
+
+/* Components */
+
+/* Search Header */
+@import "./components/SearchHeader/SearchHeader.css";
+@import "./components/SearchHeader/SearchForm/SearchForm.css";
+@import "./components/SearchHeader/SearchDetails/SearchDetails.css";
+
+/* GeoMap */
+@import "./components/GeoMap/GeoMap.css";
