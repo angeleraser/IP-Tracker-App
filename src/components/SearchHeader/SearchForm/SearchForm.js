@@ -21,6 +21,7 @@ const SearchForm = () => {
       <label htmlFor="search-ip">
         <input
           name="query"
+          id="search-ip"
           onChange={handleInputChange}
           value={query}
           placeholder="Search for any IP address or domain"
