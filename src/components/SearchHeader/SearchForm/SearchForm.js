@@ -28,7 +28,7 @@ const SearchForm = () => {
           type="text"
         />
       </label>
-      <button disabled={loading} className="btn-submit">
+      <button aria-label="Submit Button" disabled={loading} className="btn-submit">
         {loading ? <LoadingCircle /> : iconArrow}
       </button>
     </form>
